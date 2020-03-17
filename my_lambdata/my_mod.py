@@ -11,3 +11,6 @@ if __name__ == "__main__":
 	
 	y = float(input("Please input a number to enlarge: "))
 	print(enlarge(y))
+
+def funcname(self, parameter_list):
+	pass

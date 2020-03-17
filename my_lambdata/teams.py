@@ -1,4 +1,4 @@
-# example teams.py (functional approach)
+# example teams.py (getting to OOP approach)
 
 class Team():
     def __init__(self, name, city):
@@ -6,20 +6,35 @@ class Team():
         self.city = city
 
 
-def advertise(my_team):
-    print(f"HEY COME TO {my_team['city'].upper()} TO SEE OUR GAMES!!!")
+    def advertise(self):
+        # print(f"HEY COME TO {my_team['city'].upper()} TO SEE OUR GAMES!!!")
+        print(f"HEY COME TO {self.city.upper()} TO SEE OUR GAMES!!!")
 
-def full_name(my_team):
-    return f"{my_team['city']} {my_team['name']}"
+    
+    @property
+    def full_name(self):
+        # return f"{my_team['city']} {my_team['name']}"
+        return f"{self.city} {self.name}"
+
+
 
 if __name__ == "__main__":
-    # teams = [
-    #     {"city": "New York", "name": "Yankees"},
-    #     {"city": "New York", "name": "Mets"},
-    #     {"city": "Boston", "name": "Red Sox"},
-    #     {"city": "New Haven", "name": "Ravens"},
-    #     {"city": "Washington", "name": "Nationals"}
-    # ]
+    teams = [
+        {"city": "New York", "name": "Yankees"},
+        {"city": "New York", "name": "Mets"},
+        {"city": "Boston", "name": "Red Sox"},
+        {"city": "New Haven", "name": "Ravens"},
+        {"city": "Washington", "name": "Nationals"}
+    ]
+
+    for team_attributes in teams:
+        team = Team(name= team_attributes["name"], city=team_attributes["city"])
+        print("-------")
+        # print(full_name(team))
+        # advertise(team)
+        print(team.city)
+        print(team.full_name)
+        team.advertise()
 
     # for team in teams:
     #     print("-------")

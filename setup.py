@@ -9,9 +9,10 @@ setup(
     author_email="fonze@aol.com",
     description="For example purposes",
     long_description=long_description,
-    long_description_content_type="text/markdown", # required if using a md file for long desc
-    #license="MIT",
+    long_description_content_type="text/markdown",
+    # required if using a md file for long desc
+    # license="MIT",
     url="https://github.com/cardstud/cd-my-lambdata-dspt4",
-    #keywords="",
-    packages=find_packages() # ["my_lambdata"]
+    # keywords="",
+    packages=find_packages()  # ["my_lambdata"]
 )

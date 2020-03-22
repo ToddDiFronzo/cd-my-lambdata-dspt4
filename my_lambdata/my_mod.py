@@ -8,6 +8,6 @@ def enlarge(n):
 print("Junk")
 print("Globabl Scope")
 
-y = input float("Please input a number ot enlarge: "))
+y = float(input("Please input a number to enlarge: "))
 print(enlarge(y))
 

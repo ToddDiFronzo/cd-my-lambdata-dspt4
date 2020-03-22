@@ -1,4 +1,4 @@
-# example teams.py (OOP inheritance approach)
+# example teams.py (OOP inheritance approach - yes)
 class Team():
 
     def __init__(self, name, city="CITY NAME", players=["Player 1"]):

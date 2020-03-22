@@ -9,6 +9,7 @@ pandas = "*"
 [dev-packages]
 twine = "*"
 pylint = "*"
+pytest = "*"
 
 [requires]
 python_version = "3.7"

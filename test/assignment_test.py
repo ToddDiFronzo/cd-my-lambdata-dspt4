@@ -15,8 +15,8 @@ class TestCustomFrame(unittest.TestCase):
         # assert "name" should be a column
         self.assertTrue("name" in list(custom_df.columns))
         # assert "California" should exist in a column called "name"
-        # assert that first row, name is "Cali" and abbrev is "CA"
-        self.assertEqual(custom_df["abbrev"][0], "CA")
+        # assert that first row, name is "California" and abbrev is "CA"
+        self.assertEqual(custom_df["abbrev"][0], "CA")      # [0] checks first row
         self.assertEqual(custom_df["name"][0], "California")
 
 if __name__ == '__main__':
